@@ -14,6 +14,7 @@
 @synthesize currentPath;
 @synthesize currentSegment;
 @synthesize currentColor;
+@synthesize brushWidth;
 
 - (void) baseInit{
     
@@ -54,7 +55,7 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     currentPath=[[UIBezierPath alloc]init];
-    currentPath.lineWidth=10;
+    currentPath.lineWidth = brushWidth;
     
     currentSegment = [[DrawnSegment alloc] init];
     currentSegment.path = currentPath;
@@ -77,6 +78,12 @@
 {
     
     
+}
+
+-(void) clear
+{
+    [pathStack removeAllObjects];
+    [self setNeedsDisplay];
 }
 
 

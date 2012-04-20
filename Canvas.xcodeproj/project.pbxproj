@@ -24,6 +24,8 @@
 		B01026381541F2A1005D3D15 /* DrawableCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = B01026371541F2A1005D3D15 /* DrawableCanvas.m */; };
 		B010263B1541FA2F005D3D15 /* DrawnSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = B010263A1541FA2F005D3D15 /* DrawnSegment.m */; };
 		B010263E15420230005D3D15 /* ColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B010263D15420230005D3D15 /* ColorButton.m */; };
+		B0102644154212BF005D3D15 /* canvasIcon57.png in Resources */ = {isa = PBXBuildFile; fileRef = B0102643154212BF005D3D15 /* canvasIcon57.png */; };
+		B0102646154212DF005D3D15 /* canvasIcon114.png in Resources */ = {isa = PBXBuildFile; fileRef = B0102645154212DF005D3D15 /* canvasIcon114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		B010263A1541FA2F005D3D15 /* DrawnSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawnSegment.m; sourceTree = "<group>"; };
 		B010263C15420230005D3D15 /* ColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorButton.h; sourceTree = "<group>"; };
 		B010263D15420230005D3D15 /* ColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorButton.m; sourceTree = "<group>"; };
+		B0102643154212BF005D3D15 /* canvasIcon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canvasIcon57.png; sourceTree = "<group>"; };
+		B0102645154212DF005D3D15 /* canvasIcon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canvasIcon114.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 		B01025ED1541F223005D3D15 = {
 			isa = PBXGroup;
 			children = (
+				B0102645154212DF005D3D15 /* canvasIcon114.png */,
+				B0102643154212BF005D3D15 /* canvasIcon57.png */,
 				B01026021541F223005D3D15 /* Canvas */,
 				B01026231541F224005D3D15 /* CanvasTests */,
 				B01025FB1541F223005D3D15 /* Frameworks */,
@@ -243,6 +249,8 @@
 				B01026071541F223005D3D15 /* InfoPlist.strings in Resources */,
 				B01026101541F223005D3D15 /* MainStoryboard_iPhone.storyboard in Resources */,
 				B01026131541F223005D3D15 /* MainStoryboard_iPad.storyboard in Resources */,
+				B0102644154212BF005D3D15 /* canvasIcon57.png in Resources */,
+				B0102646154212DF005D3D15 /* canvasIcon114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

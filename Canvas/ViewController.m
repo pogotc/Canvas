@@ -18,6 +18,7 @@
 
 @synthesize canvas;
 @synthesize testButton;
+@synthesize slider;
 
 - (void)viewDidLoad
 {
@@ -31,7 +32,10 @@
                                                  name:@"pickedColor"
                                                object:nil];
 
-
+    
+    canvas.brushWidth = slider.value;
+    CGAffineTransform trans = CGAffineTransformMakeRotation(M_PI * -0.5);
+    slider.transform = trans;
 }
 
 - (void)viewDidUnload
@@ -94,6 +98,16 @@
     }else {
         canvas.currentColor = [UIColor greenColor];
     }
+}
+
+-(IBAction)selectedClearButton:(id)sender
+{
+    [canvas clear];
+}
+
+-(IBAction)changeBrushWidth:(id)sender
+{
+    canvas.brushWidth = slider.value;
 }
 
 @end

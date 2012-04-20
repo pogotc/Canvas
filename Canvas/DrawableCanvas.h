@@ -15,5 +15,8 @@
 @property (nonatomic, retain) UIBezierPath *currentPath;
 @property (nonatomic, retain) DrawnSegment *currentSegment;
 @property (nonatomic, retain) UIColor *currentColor;
+@property (nonatomic) float brushWidth;
+
+-(void) clear;
 
 @end

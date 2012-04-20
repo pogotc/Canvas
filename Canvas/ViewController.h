@@ -14,8 +14,10 @@
 
 @property (nonatomic, retain) IBOutlet DrawableCanvas *canvas;    
 @property (nonatomic, retain) IBOutlet ColorButton *testButton;
+@property (nonatomic, retain) IBOutlet UISlider *slider;
 
 -(void) generateColorPalette;
-
+-(IBAction)selectedClearButton:(id)sender;
+-(IBAction)changeBrushWidth:(id)sender;
 
 @end
