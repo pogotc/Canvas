@@ -58,7 +58,7 @@
     
     currentSegment = [[DrawnSegment alloc] init];
     currentSegment.path = currentPath;
-    currentSegment.color = [currentColor copy];
+    currentSegment.color = currentColor;
     
     UITouch *mytouch=[[touches allObjects] objectAtIndex:0];
     [currentPath moveToPoint:[mytouch locationInView:self]];

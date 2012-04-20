@@ -23,6 +23,7 @@
 		B010262B1541F224005D3D15 /* CanvasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B010262A1541F224005D3D15 /* CanvasTests.m */; };
 		B01026381541F2A1005D3D15 /* DrawableCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = B01026371541F2A1005D3D15 /* DrawableCanvas.m */; };
 		B010263B1541FA2F005D3D15 /* DrawnSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = B010263A1541FA2F005D3D15 /* DrawnSegment.m */; };
+		B010263E15420230005D3D15 /* ColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B010263D15420230005D3D15 /* ColorButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		B01026371541F2A1005D3D15 /* DrawableCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawableCanvas.m; sourceTree = "<group>"; };
 		B01026391541FA2F005D3D15 /* DrawnSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawnSegment.h; sourceTree = "<group>"; };
 		B010263A1541FA2F005D3D15 /* DrawnSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawnSegment.m; sourceTree = "<group>"; };
+		B010263C15420230005D3D15 /* ColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorButton.h; sourceTree = "<group>"; };
+		B010263D15420230005D3D15 /* ColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				B01026371541F2A1005D3D15 /* DrawableCanvas.m */,
 				B01026391541FA2F005D3D15 /* DrawnSegment.h */,
 				B010263A1541FA2F005D3D15 /* DrawnSegment.m */,
+				B010263C15420230005D3D15 /* ColorButton.h */,
+				B010263D15420230005D3D15 /* ColorButton.m */,
 			);
 			path = Canvas;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				B01026161541F223005D3D15 /* ViewController.m in Sources */,
 				B01026381541F2A1005D3D15 /* DrawableCanvas.m in Sources */,
 				B010263B1541FA2F005D3D15 /* DrawnSegment.m in Sources */,
+				B010263E15420230005D3D15 /* ColorButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

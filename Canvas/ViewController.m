@@ -17,11 +17,20 @@
 @implementation ViewController
 
 @synthesize canvas;
+@synthesize testButton;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self generateColorPalette];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveSwapColorNotification:) 
+                                                 name:@"pickedColor"
+                                               object:nil];
+
 
 }
 
@@ -31,6 +40,35 @@
     // Release any retained subviews of the main view.
 }
 
+-(void) generateColorPalette
+{
+    NSArray *colors = [[NSArray alloc] initWithObjects: [UIColor redColor], 
+                                                        [UIColor blueColor], 
+                                                        [UIColor greenColor], 
+                                                        [UIColor blackColor], 
+                                                        [UIColor purpleColor], 
+                                                        [UIColor yellowColor],
+                                                        [UIColor brownColor],
+                                                        [UIColor cyanColor],
+                                                        [UIColor orangeColor],
+                                                        [UIColor lightGrayColor],
+                                                        nil];
+    
+    float yPos = 0;
+    float buttonSize = 40;
+    
+    for (UIColor *col in colors) {
+        yPos = [colors indexOfObject:col] * buttonSize;
+        testButton = [[ColorButton alloc] initWithFrame:CGRectMake(0, 
+                                                                   yPos, 
+                                                                   buttonSize, 
+                                                                   buttonSize)];
+        testButton.color = col;
+        [self.view addSubview:testButton];
+    } 
+    
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
@@ -38,6 +76,13 @@
     } else {
         return YES;
     }
+}
+
+- (void) receiveSwapColorNotification:(NSNotification *) notification
+{
+    NSDictionary *userInfo = notification.userInfo;
+    UIColor *selectedColor = [userInfo objectForKey:@"color"];
+    canvas.currentColor = selectedColor;
 }
 
 

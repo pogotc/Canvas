@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "DrawableCanvas.h"
+#import "ColorButton.h"
 
 @interface ViewController : UIViewController
 
 @property (nonatomic, retain) IBOutlet DrawableCanvas *canvas;    
+@property (nonatomic, retain) IBOutlet ColorButton *testButton;
 
--(IBAction)switchColor:(id)sender;
+-(void) generateColorPalette;
+
 
 @end
