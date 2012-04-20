@@ -19,5 +19,7 @@
 -(void) generateColorPalette;
 -(IBAction)selectedClearButton:(id)sender;
 -(IBAction)changeBrushWidth:(id)sender;
+-(IBAction)pressedUndoButton:(id)sender;
+-(IBAction)pressedRedoButton:(id)sender;
 
 @end

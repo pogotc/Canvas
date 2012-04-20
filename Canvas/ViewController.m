@@ -75,11 +75,8 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
-    }
+    return interfaceOrientation == UIInterfaceOrientationLandscapeLeft || 
+    interfaceOrientation == UIInterfaceOrientationLandscapeRight;
 }
 
 - (void) receiveSwapColorNotification:(NSNotification *) notification
@@ -109,5 +106,16 @@
 {
     canvas.brushWidth = slider.value;
 }
+
+-(IBAction)pressedUndoButton:(id)sender
+{
+    [canvas undo];
+}
+
+-(IBAction)pressedRedoButton:(id)sender
+{
+    [canvas redo];
+}
+
 
 @end

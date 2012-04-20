@@ -11,6 +11,7 @@
 @implementation DrawableCanvas
 
 @synthesize pathStack;
+@synthesize pathBuffer;
 @synthesize currentPath;
 @synthesize currentSegment;
 @synthesize currentColor;
@@ -19,6 +20,7 @@
 - (void) baseInit{
     
     pathStack = [[NSMutableArray alloc] init ];
+    pathBuffer = [[NSMutableArray alloc] init ];
     currentColor = [UIColor greenColor];
 }
 
@@ -65,6 +67,8 @@
     [currentPath moveToPoint:[mytouch locationInView:self]];
     [pathStack addObject:currentSegment];
     
+    [pathBuffer removeAllObjects];
+    
 }
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
@@ -84,6 +88,26 @@
 {
     [pathStack removeAllObjects];
     [self setNeedsDisplay];
+}
+
+-(void) undo
+{
+    if([pathStack count] > 0){
+        DrawnSegment *lastSegment = [pathStack lastObject];
+        [pathBuffer addObject:lastSegment];
+        [pathStack removeLastObject];
+        [self setNeedsDisplay];
+    }    
+}
+
+-(void) redo
+{
+    if([pathBuffer count] > 0){
+        DrawnSegment *lastSegment = [pathBuffer lastObject];
+        [pathStack addObject:lastSegment];
+        [pathBuffer removeLastObject];
+        [self setNeedsDisplay];
+    }
 }
 
 

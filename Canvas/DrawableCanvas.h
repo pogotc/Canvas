@@ -12,11 +12,14 @@
 @interface DrawableCanvas : UIView
 
 @property (nonatomic, retain) NSMutableArray *pathStack;
+@property (nonatomic, retain) NSMutableArray *pathBuffer;
 @property (nonatomic, retain) UIBezierPath *currentPath;
 @property (nonatomic, retain) DrawnSegment *currentSegment;
 @property (nonatomic, retain) UIColor *currentColor;
 @property (nonatomic) float brushWidth;
 
 -(void) clear;
+-(void) undo;
+-(void) redo;
 
 @end
