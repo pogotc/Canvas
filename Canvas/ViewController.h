@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DrawableCanvas.h"
 
 @interface ViewController : UIViewController
+
+@property (nonatomic, retain) IBOutlet DrawableCanvas *canvas;    
+
+-(IBAction)switchColor:(id)sender;
 
 @end

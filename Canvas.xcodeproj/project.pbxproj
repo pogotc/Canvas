@@ -21,6 +21,8 @@
 		B01026201541F223005D3D15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01025FE1541F223005D3D15 /* Foundation.framework */; };
 		B01026281541F224005D3D15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B01026261541F224005D3D15 /* InfoPlist.strings */; };
 		B010262B1541F224005D3D15 /* CanvasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B010262A1541F224005D3D15 /* CanvasTests.m */; };
+		B01026381541F2A1005D3D15 /* DrawableCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = B01026371541F2A1005D3D15 /* DrawableCanvas.m */; };
+		B010263B1541FA2F005D3D15 /* DrawnSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = B010263A1541FA2F005D3D15 /* DrawnSegment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +40,26 @@
 		B01025FC1541F223005D3D15 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B01025FE1541F223005D3D15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B01026001541F223005D3D15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B01026041541F223005D3D15 /* Canvas-Info.plist */ = {isa = PBXFileReference; path = "Canvas-Info.plist"; sourceTree = "<group>"; };
+		B01026041541F223005D3D15 /* Canvas-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Canvas-Info.plist"; sourceTree = "<group>"; };
 		B01026061541F223005D3D15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B01026081541F223005D3D15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B010260A1541F223005D3D15 /* Canvas-Prefix.pch */ = {isa = PBXFileReference; path = "Canvas-Prefix.pch"; sourceTree = "<group>"; };
-		B010260B1541F223005D3D15 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		B010260A1541F223005D3D15 /* Canvas-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Canvas-Prefix.pch"; sourceTree = "<group>"; };
+		B010260B1541F223005D3D15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B010260C1541F223005D3D15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B010260F1541F223005D3D15 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B01026121541F223005D3D15 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		B01026141541F223005D3D15 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		B01026141541F223005D3D15 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B01026151541F223005D3D15 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B010261C1541F223005D3D15 /* CanvasTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvasTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B010261D1541F223005D3D15 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		B01026251541F224005D3D15 /* CanvasTests-Info.plist */ = {isa = PBXFileReference; path = "CanvasTests-Info.plist"; sourceTree = "<group>"; };
+		B01026251541F224005D3D15 /* CanvasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CanvasTests-Info.plist"; sourceTree = "<group>"; };
 		B01026271541F224005D3D15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B01026291541F224005D3D15 /* CanvasTests.h */ = {isa = PBXFileReference; path = CanvasTests.h; sourceTree = "<group>"; };
+		B01026291541F224005D3D15 /* CanvasTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasTests.h; sourceTree = "<group>"; };
 		B010262A1541F224005D3D15 /* CanvasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasTests.m; sourceTree = "<group>"; };
+		B01026361541F2A1005D3D15 /* DrawableCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawableCanvas.h; sourceTree = "<group>"; };
+		B01026371541F2A1005D3D15 /* DrawableCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawableCanvas.m; sourceTree = "<group>"; };
+		B01026391541FA2F005D3D15 /* DrawnSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawnSegment.h; sourceTree = "<group>"; };
+		B010263A1541FA2F005D3D15 /* DrawnSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawnSegment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,10 @@
 				B01026141541F223005D3D15 /* ViewController.h */,
 				B01026151541F223005D3D15 /* ViewController.m */,
 				B01026031541F223005D3D15 /* Supporting Files */,
+				B01026361541F2A1005D3D15 /* DrawableCanvas.h */,
+				B01026371541F2A1005D3D15 /* DrawableCanvas.m */,
+				B01026391541FA2F005D3D15 /* DrawnSegment.h */,
+				B010263A1541FA2F005D3D15 /* DrawnSegment.m */,
 			);
 			path = Canvas;
 			sourceTree = "<group>";
@@ -265,6 +275,8 @@
 				B01026091541F223005D3D15 /* main.m in Sources */,
 				B010260D1541F223005D3D15 /* AppDelegate.m in Sources */,
 				B01026161541F223005D3D15 /* ViewController.m in Sources */,
+				B01026381541F2A1005D3D15 /* DrawableCanvas.m in Sources */,
+				B010263B1541FA2F005D3D15 /* DrawnSegment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

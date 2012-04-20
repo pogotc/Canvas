@@ -12,12 +12,17 @@
 
 @end
 
+
+
 @implementation ViewController
+
+@synthesize canvas;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
 }
 
 - (void)viewDidUnload
@@ -32,6 +37,17 @@
         return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     } else {
         return YES;
+    }
+}
+
+
+-(IBAction)switchColor:(id)sender
+{
+    UIButton *button = (UIButton *) sender;
+    if([button.titleLabel.text isEqualToString:@"Red"]){
+        canvas.currentColor = [UIColor redColor];
+    }else {
+        canvas.currentColor = [UIColor greenColor];
     }
 }
 
